@@ -13,6 +13,25 @@
   }
 }
 
+.dot-container{
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+.dot:hover {
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
