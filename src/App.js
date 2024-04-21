@@ -11,11 +11,9 @@ function checkCorrectandReset(x){
   if(x === correctNum){
     correctCount++
     document.getElementById('correct-in-row').innerHTML = `CORRECT IN A ROW: ${correctCount}`
-    console.log(`correct!`)
   }else{
     correctCount = 0
     document.getElementById('correct-in-row').innerHTML = `CORRECT IN A ROW: ${correctCount}`
-    console.log(`incorrect!`)
   }
   dot_rgb_1 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
   dot_rgb_2 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
@@ -43,7 +41,6 @@ function App() {
   }else{
     correct_rgb = dot_rgb_3
   }
-  console.log(correctNum)
   return (
     <div className="App">
       <header className="App-header">
