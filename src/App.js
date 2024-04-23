@@ -1,5 +1,6 @@
 import './App.css'
 
+// initialize variables
 let correctNum = Math.floor(Math.random() * 3)
 let correctCount = 0
 let correct_rgb
@@ -7,6 +8,7 @@ let dot_rgb_1 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.rando
 let dot_rgb_2 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
 let dot_rgb_3 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
 
+// function for checking if the button clicked was correct and changing the page accordingly
 function checkCorrectandReset(x){
   if(x === correctNum){
     correctCount++
@@ -33,6 +35,7 @@ function checkCorrectandReset(x){
   document.getElementById('correct-rgb').innerHTML = correct_rgb
 }
 
+// main app function, creates a random correct circle and puts it on the page
 function App() {
   if(correctNum === 0){
     correct_rgb = dot_rgb_1
