@@ -63,7 +63,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://papaya-kringle-fb67c6.netlify.app/"
+          href="https://broderick-howell.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
