@@ -4,9 +4,16 @@ import './App.css'
 let correctNum = Math.floor(Math.random() * 3)
 let correctCount = 0
 let correct_rgb
-let dot_rgb_1 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
-let dot_rgb_2 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
-let dot_rgb_3 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+let dot_rgb_1
+let dot_rgb_2 
+let dot_rgb_3 
+
+// makes sure there are no duplicate rgbs
+while(dot_rgb_1 === dot_rgb_2 || dot_rgb_2 === dot_rgb_3 || dot_rgb_1 === dot_rgb_3){
+  dot_rgb_1 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+  dot_rgb_2 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+  dot_rgb_3 = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+}
 
 // function for checking if the button clicked was correct and changing the page accordingly
 function checkCorrectandReset(x){
